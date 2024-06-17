@@ -1,6 +1,6 @@
 {
-  "name": "@baronha/react-native-photo-editor",
-  "version": "1.1.11",
+  "name": "@haipe/react-native-photo-editor",
+  "version": "1.0.0",
   "description": "🌄 Image editor using native modules for iOS and Android",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -44,7 +44,8 @@
   },
   "homepage": "https://github.com/baronha/react-native-photo-editor#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
