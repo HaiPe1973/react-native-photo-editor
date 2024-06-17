@@ -18,6 +18,7 @@ import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.view.animation.AnticipateOvershootInterpolator
+import android.view.MotionEvent
 import android.widget.*
 import androidx.annotation.NonNull
 import androidx.annotation.RequiresApi
@@ -171,6 +172,8 @@ open class PhotoEditorActivity : AppCompatActivity(), OnPhotoEditorListener, Vie
       .commitAllowingStateLoss()
   }
 
+  override fun onTouchSourceImage(event: MotionEvent?) {}
+  
   private fun showLoading(message: String) {
     mProgressDialog = ProgressDialog(this)
     mProgressDialog!!.setMessage(message)
